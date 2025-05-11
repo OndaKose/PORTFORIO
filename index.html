@@ -38,8 +38,8 @@
 
         /* ファーストビューのスタイル */
         .profile-img {
-            width: 300px;  /* 画像を大きく */
-            height: 300px; /* 画像を大きく */
+            width: 250px;  /* 画像を大きく */
+            height: 250px; /* 画像を大きく */
             border-radius: 50%;
             margin-top: 100px; /* ナビゲーションバーを避けるために余白を追加 */
             border: 4px solid #fff;
@@ -55,14 +55,14 @@
         }
         .profile-section h1 {
             font-weight: 700;
-            font-size: 4rem; /* 大きく */
+            font-size: 2rem; /* 大きく */
         }
         .profile-section p {
             font-size: 2rem; /* 大きく */
             color: #fff;
         }
         .profile-section h2 {
-            font-size: 2.5rem; /* 大きく */
+            font-size: 2rem; /* 大きく */
             font-weight: 400;
             color: #fff;
         }
@@ -83,7 +83,7 @@
         .section-title {
             text-align: center;
             margin-bottom: 30px;
-            font-size: 3rem; /* 大きく */
+            font-size: 2rem; /* 大きく */
         }
 
         .section-content {
@@ -97,7 +97,7 @@
             background: #f7f7f7;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            font-size: 1.5rem; /* 大きく */
+            font-size: 1rem; /* 大きく */
         }
 
         /* スキルセクション */
@@ -119,18 +119,18 @@
         }
 
         .skill-label {
-            font-size: 2rem; /* 大きく */
+            font-size: 1rem; /* 大きく */
             margin-bottom: 10px;
             color: #333;
         }
 
         .stars {
-            font-size: 2.5rem; /* 大きく */
+            font-size: 2rem; /* 大きく */
             color: #ffcc00; /* 星の色 */
         }
 
         .skill-value {
-            font-size: 1.5rem; /* 大きく */
+            font-size: 1rem; /* 大きく */
             font-weight: bold;
             color: #333;
         }
@@ -148,7 +148,7 @@
         .project-link {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: white;
             background-color: #6c63ff;
             border-radius: 10px;
@@ -158,6 +158,16 @@
 
         .project-link:hover {
             background-color: #5a54e5;
+        }
+
+                /* プロジェクトタイトルのフォントサイズを小さく */
+        .project-title {
+            font-size: 1rem;  /* 少し小さく */
+        }
+
+        /* プロジェクト概要のテキストを少し小さく */
+        .project-description {
+            font-size: 1rem;  /* 少し小さく */
         }
     </style>
 </head>
@@ -179,8 +189,8 @@
     <!-- ファーストビュー -->
     <section class="text-center profile-section" id="first-view">
         <!-- 自分の写真 -->
-        <img src="img/スクリーンショット 2025-05-09 10.03.45.png" alt="Profile Picture" class="profile-img fade-in">
-        <h1>ITエンジニア</h1>
+        <img src="スクリーンショット 2025-05-09 10.03.45.png" alt="Profile Picture" class="profile-img fade-in">
+        <h1>エンジニア</h1>
         <p>#MLOps #TimeSeries</p>
         <h2>あ</h2>
         <div class="cta-buttons">
@@ -224,7 +234,7 @@
             <!-- プロジェクト1 -->
             <div class="col-md-6">
                 <div class="content-column">
-                    <h4>ファン同⼠での活性化を⽬的としたコミュニティマップの実現</h4>
+                    <h4 class="project-title">ファン同⼠での活性化を⽬的としたコミュニティマップの実現</h4>
                     <!-- モーダルウィンドウのリンク -->
                     <a href="#project1Modal" class="project-link" data-bs-toggle="modal">詳細を見る</a>
                 </div>
@@ -232,7 +242,7 @@
             <!-- プロジェクト2 -->
             <div class="col-md-6">
                 <div class="content-column">
-                    <h4>音楽評価掲示板</h4>
+                    <h4 class="project-title">音楽評価掲示板</h4>
                     <!-- モーダルウィンドウのリンク -->
                     <a href="#project2Modal" class="project-link" data-bs-toggle="modal">詳細を見る</a>
                 </div>
@@ -262,7 +272,7 @@
                     <!-- PDFの埋め込み -->
                     <h4><strong>プロジェクト資料</strong></h4>
                     <p>以下のPDFには、プロジェクトの詳細と成果が記載されています。</p>
-                    <embed src="pdf/未来創造PJ_成果物.pdf" type="application/pdf" width="100%" height="500px" />
+                    <embed src="未来創造PJ_成果物.pdf" type="application/pdf" width="100%" height="500px" />
 
                     <!-- プロジェクトの成果 -->
                     <p>
@@ -289,7 +299,7 @@
                 <div class="modal-body">
                     <!-- プロジェクト概要 -->
                     <h3>プロジェクト概要</h3>
-                    <p>
+                    <p class="project-description">
                         それぞれの楽曲についての評価を数値化して誰でも評価、コメントできるかつ、掲示板という特性を活かして、議論したり、自分の好きな楽曲を探すことができるもの。これによって、音楽業界の活性化を目的としている。
 
                     </p>
@@ -317,21 +327,21 @@
                         最初に、ユーザーはログインページにアクセスし、新規登録を行うか、既存のアカウントでログインする。登録が成功すると、音楽掲示板ページに遷移し、他のユーザーと情報を共有できる。
                     </p>
                     <!-- 画像1の埋め込み -->
-                    <img src="img/スクリーンショット 2025-05-09 9.50.20.png" alt="ログインページ" class="img-fluid mb-3">
+                    <img src="スクリーンショット 2025-05-09 9.50.20.png" alt="ログインページ" class="img-fluid mb-3">
 
                     <!-- ステップ2 -->
                     <p><strong>2. 音楽掲示板</strong><br>
                         音楽掲示板では、曲名とアーティストが表示され、全ての楽曲にリンクが添付されている。このリンクをクリックすると、各曲の詳細ページに移動し、さらに深い情報を得ることができる。
                     </p>
                     <!-- 画像2の埋め込み -->
-                    <img src="img/スクリーンショット 2025-05-09 9.50.54.png" alt="音楽掲示板" class="img-fluid mb-3">
+                    <img src="スクリーンショット 2025-05-09 9.50.54.png" alt="音楽掲示板" class="img-fluid mb-3">
 
                     <!-- ステップ3 -->
                     <p><strong>3. コメントと評価</strong><br>
                         各曲の詳細ページでは、ユーザーがコメントや評価（1-5点）を残すことができ、他のユーザーが投稿したコメントも閲覧できる。この機能により、ユーザー同士が音楽について意見を交換でき、活発なコミュニティが形成される。
                     </p>
                     <!-- 画像3の埋め込み -->
-                    <img src="img/スクリーンショット 2025-05-09 9.51.13.png" alt="コメントと評価ページ" class="img-fluid mb-3">
+                    <img src="スクリーンショット 2025-05-09 9.51.13.png" alt="コメントと評価ページ" class="img-fluid mb-3">
 
                     <!-- 工夫した点 -->
                     <h4><strong>工夫した点</strong></h4>
